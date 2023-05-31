@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- BODY -->
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <!-- HEADER -->
+    <header class="bg-blue-700 text-white sticky top-0 z-10">
+        <!-- NAVBAR CONTAINER -->
+        <section class="max-w-5xl mx-auto p-4 flex justify-between items-center">
+             <!-- LOGO AND NAME OF WEBSITE -->
+            <h1 class="text-3xl font-bold"><a href="#">✈️ TravelBeta</a></h1>
+            <div>
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobile-open-button" class="text-3xl md:hidden focus:outline-none">&#9776;</button>
+                <!-- WEB NAVIGATION -->
+                <nav class="hidden md:block md:justify-between md:items-center gap-6 space-x-6" aria-label="main">
+                        <a href="#travel" class="hover:opacity-90">Travel Guides</a>
+                        <a href="#testimonials" class="hover:opacity-90">Testimonial</a>
+                        <a href="#about" class="hover:opacity-90">About Us</a>
+                        <a href="#contact" class="hover:opacity-90">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- CLOSE menuBTN -->
+        <section id="mobile-close-button" class="absolute top-0 text-3xl w-full bg-black flex-col justify-center origin-top animate-open-menu hidden">
+            <button class="text-6xl self-end px-6">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen bg-black items-center py-8">
+                <a href="#" class="hover:opacity-90 py-6">Home</a>
+                <a href="#travel" class="hover:opacity-90 py-6 ">Travel Guides</a>
+                <a href="#testimonials" class="hover:opacity-90 py-6">Testimonial</a>
+                <a href="#about" class="hover:opacity-90 py-6">About Us</a>
+                <a href="#contact" class="hover:opacity-90 py-6">Contact Us</a>
+            </nav>
+        </section>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- MAIN -->
+    <main class="max-w-5xl mx-auto">
+        <!-- Hero section container with flex -->
+        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 py-6 mb-16 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+            <!-- FIRST flex item --- ARTICLE -->
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md text-3xl font-bold text-center sm:text-4xl sm:text-left text-slate-900 dark:text-white mb-4">
+                    We Travel To <span class="text-indigo-700 dark:text-indigo-400">Where No One Has Traveled</span>  Before....
+                </h2>
+                <p class="max-w-md text-xl mt-2 text-center sm:text-left text-slate-500 dark:text-slate-300 sm:mb-8 sm:text-2xl mb-4">We're Making Travel Destinations Easier for the Next Generation. from Africa to Asia, Australia, Antartica and beyond....</p>
+                <a href="#" class="max-w-md mx-auto flex w-1/2 items-center justify-center text-xl mt-2 text-center sm:w-full text-slate-300 dark:text-slate-900 px-6 py-2 rounded-xl border-transparent border bg-slate-900 dark:bg-white hover:bg-slate-500 hover:text-white">Use TravelBeta....</a>
+            </article>
+            <!-- SECOND FLEX ITEM --- IMAGES -->
+            <img src="./img/paris.jpg" alt="Paris" class="w-full sm:w-1/2">
+        </section>
+
+        <!-- Travel Section  -->
+        <section id="travel" class="p-6 my-16 scroll-m-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white underline">
+                Travel Guides
+            </h2>
+            <!-- List -->
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row-reverse items-center gap-8">
+                <li class="w-2/3 flex flex-col sm:w-5/6 rounded-3xl shadow-xl py-6 px-2 border-slate-900 dark:border-gray-100 font-bold border border-solid">
+                    <img src="./img/cancun-3.jpg" alt="Cancun Island" class="mb-6 w-1/2 self-center">
+                    <h3 class="text-center text-3xl font-bold text-slate-900 dark:text-white ">Cancun Island</h3>
+                    <p class="hidden sm:block text-center text-1xl mt-2 text-slate-500 dark:text-slate-400 ">$</p>
+                    <p class="sm:hidden text-center text-1xl mt-2 text-slate-500 dark:text-white ">Affordable for All</p>
+                </li>
+                <li class="w-2/3 flex flex-col sm:w-5/6 rounded-3xl shadow-xl py-6 px-2 border-slate-900 dark:border-gray-100 font-bold border border-solid">
+                    <img src="./img/santorini-1.jpg" alt="Cancun Island" class="mb-6 w-1/2 self-center">
+                    <h3 class="text-center text-3xl font-bold text-slate-900 dark:text-white ">Santorini</h3>
+                    <p class="hidden sm:block text-center text-1xl mt-2 text-slate-500 dark:text-slate-400 ">$$</p>
+                    <p class="sm:hidden text-center text-1xl mt-2 text-slate-500 dark:text-white ">Best Travel Location</p>
+                </li>
+                <li class="w-2/3 flex flex-col sm:w-5/6 rounded-3xl shadow-xl py-6 px-2 border-slate-900 dark:border-gray-100 font-bold border border-solid">
+                    <img src="./img/singapore=-1.jpg" alt="Cancun Island" class="mb-6 w-1/2 self-center">
+                    <h3 class="text-center text-3xl font-bold text-slate-900 dark:text-white ">Singapore</h3>
+                    <p class="hidden sm:block text-center text-1xl mt-2 text-slate-500 dark:text-slate-400 ">$$$</p>
+                    <p class="sm:hidden text-center text-1xl mt-2 text-slate-500 dark:text-white ">Explore Singapore</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Travel Guide ends -->
+
+        <!-- Testimonials Section  -->
+        <section id="testimonials" class="p-6 my-12 scroll-m-12 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white underline">
+                Testimonials
+            </h2>
+            <figure class="my-12">
+                <blockquote class="bg-blue-700 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-7xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-10 after:right-0 after:text-7xl after:text-white after:opacity-25 after:transform  after:-translate-x-2 after:-translate-y-2">
+                        TravelBeta 
+                        has always been there for me.
+                        They gave me a Travel Experience like i've never had before
+                        I will be a life-long customer. A++ Traveling Experienece.</p>
+                        
+                </blockquote>
+                <div class="text-right italic text-2xl text-slate-700 dark:text-slate-500 mt-2">&#8212; Arowolo A Qudus. Businessman</div>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-blue-700 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-7xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-10 after:right-0 after:text-7xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        TravelBeta operations started in the Early 90's 
+                        at first i was a bit scared thinking it was a scam Travel Website.
+                        I got over my fears after i gave it a and i was blown away by their services...
+                        I will always recommend it for everyone to use.
+                        I will be a life-long customer. A++ Traveling Experienece.</p>
+                        
+                </blockquote>
+                <div class="text-right italic text-2xl text-slate-700 dark:text-slate-500 mt-2">&#8212; Mastec E-Currency. Crypto Trader</div>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-blue-700 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-7xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-10 after:right-0 after:text-7xl after:text-white after:opacity-25 after:transform  after:-translate-x-2 after:-translate-y-2">
+                        I knew i didnt just want a One Time Travel Agency
+                        &#8212;  I needed &#8212;  something i can use for life until i came across TravelBeta.
+                        TravelBeta made my Traveling Experience reach its Peak.
+                        Nothing like TravelBeta!!!
+                    </p>
+                        
+                </blockquote>
+                <div class="text-right italic text-2xl text-slate-700 dark:text-slate-500 mt-2">&#8212; Page A.A Koshinawa. Mechanical Engineer</div>
+            </figure>
+        </section>
+
+        <!-- About Section  -->
+        <section id="about" class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height scroll-m-12">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white underline">
+                About Us
+            </h2>
+            <h4 class="text-center text-3xl text-slate-900 dark:text-slate-400 mb-4">Our Mission</h4>
+            <p class="text-2xl text-slate-900 dark:text-slate-400 py-2 px-4">At TravelBeta, we believe that travel is more than just a hobby – it's a way of life. We are a passionate team of travel enthusiasts committed to helping you explore the world, create unforgettable memories, and embrace new experiences.</p>
+            <br>
+            <p class="text-2xl text-slate-900 dark:text-slate-400 py-2 px-4">With TravelBeta, your journey begins the moment you step onto our website. We offer a wide range of travel services, from flight bookings and hotel reservations to vacation packages and car rentals. Our user-friendly platform and advanced search tools make it easy for you to find the best deals and plan your dream vacation with just a few clicks.</p>
+            <br>
+            <p class="text-2xl text-slate-900 dark:text-slate-400 py-2 px-4"><p class="text-2xl text-slate-900 dark:text-slate-400 py-2 px-4">With TravelBeta, your journey begins the moment you step onto our website. We offer a wide range of travel services, from flight bookings and hotel reservations to vacation packages and car rentals. Our user-friendly platform and advanced search tools make it easy for you to find the best deals and plan your dream vacation with just a few clicks.</p></p>
+        </section>
+
+        <!-- Contact Us Section  -->
+        <section id="contact" class="p-6 my-12 scroll-m-12 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white underline">
+                Contact Us
+            </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-6 dark:text-black dark:bg-transparent bg-blue-700 p-6 rounded-xl">
+                <!-- Subject -->
+                <label for="subject" class="dark:text-white">Subject:</label>
+                <input type="text" id="subject-input" name="subject" class="w-full text-xl sm:text-2xl rounded-xl p-4 shadow-xl focus:outline-none" placeholder="Your Subject" minlength="3" maxlength="60"  required>
+                <!-- Message -->
+                <label for="message" class="mt-4 dark:text-white">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type in your message" class=" w-full p-4 rounded-xl focus:outline-none text-xl sm:text-2xl shadow-xl" required></textarea>
+                <button class="bg-blue-600 hover:bg-blue-500 p-3 rounded-xl text-white border border-transparent hover:border-none hover:text-black shadow-xl active:bg-blue-400 w-48">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-blue-700 text-white text-xl sm:text-2xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>TravelBeta Group, Inc.</h2>
+                000 Utopia Way, <br>
+                Halifax, United Kingdom 12345-55555. <br>
+                Email: <a href="mailto:alabiabolore4@gmail.com">Alabiabolore4@gmail.com</a><br>
+                Phone: <a href="tel:+44-944-5665">+ 44-944-5665</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <h1 class="font-bold text-3xl italic">Our Services</h1>
+                <a href="#" class="hover:opacity-90 text-xl">Our Rockets</a>
+                <a href="#testimonials" class="hover:opacity-90 text-xl">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90 text-xl">Contact Us</a>
+                <a href="#about" class="hover:opacity-90 text-xl">About Us</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span id="year"></span></p>
+                <p class="text-right text-xl">All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
